@@ -7,7 +7,7 @@
 
 .header {
   width: 100vw;
-  height: 130vh; }
+  padding-bottom: 70px; }
   .header__container {
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh; }
+  padding-bottom: 75px; }
   .main__title {
     text-align: left;
     color: rgba(0, 0, 0, 0.596);
@@ -54,6 +54,9 @@
     .main__container__proyect {
       display: flex;
       flex-direction: column;
+      padding-bottom: 5px;
+      width: 90%;
+      margin: 0 auto;
       border-bottom: 1px solid black;
       border-radius: 4%; }
       .main__container__proyect__title {
@@ -63,7 +66,9 @@
       .main__container__proyect__flex {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center; }
         .main__container__proyect__flex__description {
           text-align: left;
           width: 35%;
@@ -73,19 +78,16 @@
             color: rgba(0, 128, 0, 0.808);
             font-weight: 600; }
         .main__container__proyect__flex__image {
-          background-color: green;
-          margin: auto;
-          height: 100px; }
+          width: 210px;
+          height: 200px;
+          border-radius: 50%; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .main__container {
     display: flex;
     flex-direction: column; }
-    .main__container__proyect {
-      padding-bottom: 10px; }
-    .main__container__proyect__image {
-      width: 150px;
-      float: left; } }
+  .main__container__proyect__flex__description {
+    width: 80%; } }
 
 .aboutus {
   padding: 15px 0px 15px 0px; }
@@ -97,11 +99,20 @@
     background: black;
     background: linear-gradient(65deg, rgba(0, 0, 0, 0.353379) 0%, rgba(177, 172, 172, 0.0116422) 100%); }
   .aboutus__description {
+    padding-top: 10px;
     width: 80%;
     margin: 0 auto;
     text-align: justify;
     font-size: x-large;
     color: rgba(0, 0, 0, 0.596); }
+    .aboutus__description__image {
+      width: 50vw;
+      float: left;
+      margin: 30px 30px 30px 0px; }
+    .aboutus__description__words {
+      color: purple;
+      font-size: xx-large;
+      font-weight: 700; }
 
 .footer {
   background-color: yellow; }

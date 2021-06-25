@@ -13,12 +13,24 @@
     }
 
     &__description{
-
+        padding-top: 10px;
         width: 80%;
         margin: 0 auto;
         text-align: justify;
         font-size: x-large;
         color: $textColor;
+
+        &__image{
+            width: 50vw;
+            float: left;
+            margin: 30px 30px 30px 0px;
+        }
+
+        &__words{
+            color: purple;
+            font-size: xx-large;
+            font-weight: 700;
+        }
     }
 
 
