@@ -1,10 +1,6 @@
 .header{
 
-    background-color: none;
-    width: 80vw;
-    height: 100vh;
-    margin: 0 auto;
-    scroll-snap-align: start;
+    padding-bottom: 70px;
 
     &__container{
         
@@ -25,10 +21,11 @@
             justify-content: space-evenly;
             list-style: none;
             margin-bottom: 80px;
+            gap: 20px;
 
             li{
                 a{
-                    color: rgba(0, 0, 0, 0.596);
+                    color: $textColor;
                     font-size: 3em;
                 }
             }

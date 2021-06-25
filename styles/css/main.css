@@ -5,19 +5,8 @@
   text-decoration: none;
   font-family: sans-serif; }
 
-.scroll {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh; }
-  .scroll section {
-    scroll-snap-align: start; }
-
 .header {
-  background-color: none;
-  width: 80vw;
-  height: 100vh;
-  margin: 0 auto;
-  scroll-snap-align: start; }
+  padding-bottom: 70px; }
   .header__container {
     display: flex;
     flex-direction: column;
@@ -32,7 +21,8 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       list-style: none;
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      gap: 20px; }
       .header__container__links li a {
         color: rgba(0, 0, 0, 0.596);
         font-size: 3em; }
@@ -41,22 +31,57 @@
       width: 100%; }
 
 .main {
-  background-color: blue;
-  width: 80vw;
-  height: 100vh;
-  margin: 0 auto;
-  scroll-snap-align: start; }
+  display: flex;
+  flex-direction: column;
+  width: 100vw; }
+  .main__title {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 10vw;
+    font-weight: 300; }
+  .main__container {
+    height: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5em;
+    row-gap: 0.5em; }
+    .main__container__proyect {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      border-radius: 4%; }
+      .main__container__proyect__title {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.596);
+        margin-bottom: 5px; }
+      .main__container__proyect__description {
+        text-align: justify;
+        width: 80%;
+        margin: auto; }
+        .main__container__proyect__description::first-letter {
+          font-size: 30px;
+          color: rgba(0, 128, 0, 0.808);
+          font-weight: 600; }
+      .main__container__proyect__image {
+        margin: auto;
+        width: 10vw; }
+
+@media only screen and (max-width: 900px) {
+  .main__container {
+    display: flex;
+    flex-direction: column; }
+    .main__container__proyect {
+      padding-bottom: 10px; }
+    .main__container__proyect__image {
+      width: 150px;
+      float: left; } }
 
 .aboutus {
-  background-color: green;
-  width: 80vw;
-  height: 100vh;
-  margin: 0 auto;
-  scroll-snap-align: start; }
+  background-color: green; }
+  .aboutus__title {
+    text-align: right; }
 
 .footer {
-  background-color: yellow;
-  width: 80vw;
-  height: 100vh;
-  margin: 0 auto;
-  scroll-snap-align: center; }
+  background-color: yellow; }
