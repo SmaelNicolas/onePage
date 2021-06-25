@@ -1,11 +1,23 @@
 .aboutus{
-    background-color: green;
+    
+    padding: 15px 0px 15px 0px;
     
 
     &__title{
         text-align: right;
+        color: $textColor;
+        font-size: 10vw;
+        font-weight: 300;
     }
 
+    &__description{
+
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: x-large;
+        color: $textColor;
+    }
 
 
 }

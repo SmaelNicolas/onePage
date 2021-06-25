@@ -35,9 +35,9 @@
             }
 
             &__description{
-                text-align: justify;
-                width: 80%;
-                margin: auto;
+                text-align: left;
+                width: 50%;
+                margin-left: 50px;
 
                 &::first-letter{
                     font-size: 30px;
