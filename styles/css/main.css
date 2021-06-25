@@ -6,7 +6,8 @@
   font-family: sans-serif; }
 
 .header {
-  padding-bottom: 70px; }
+  width: 100vw;
+  height: 130vh; }
   .header__container {
     display: flex;
     flex-direction: column;
@@ -33,12 +34,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }
   .main__title {
     text-align: left;
     color: rgba(0, 0, 0, 0.596);
     font-size: 10vw;
-    font-weight: 300; }
+    font-weight: 300;
+    background: #b1acac;
+    background: linear-gradient(65deg, rgba(177, 172, 172, 0.0116422) 0%, rgba(0, 0, 0, 0.353379) 100%); }
   .main__container {
     height: 100%;
     margin-top: 25px;
@@ -56,17 +60,22 @@
         text-align: center;
         color: rgba(0, 0, 0, 0.596);
         margin-bottom: 5px; }
-      .main__container__proyect__description {
-        text-align: left;
-        width: 50%;
-        margin-left: 50px; }
-        .main__container__proyect__description::first-letter {
-          font-size: 30px;
-          color: rgba(0, 128, 0, 0.808);
-          font-weight: 600; }
-      .main__container__proyect__image {
-        margin: auto;
-        width: 10vw; }
+      .main__container__proyect__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .main__container__proyect__flex__description {
+          text-align: left;
+          width: 35%;
+          margin-left: 50px; }
+          .main__container__proyect__flex__description::first-letter {
+            font-size: 30px;
+            color: rgba(0, 128, 0, 0.808);
+            font-weight: 600; }
+        .main__container__proyect__flex__image {
+          background-color: green;
+          margin: auto;
+          height: 100px; }
 
 @media only screen and (max-width: 900px) {
   .main__container {
@@ -84,7 +93,9 @@
     text-align: right;
     color: rgba(0, 0, 0, 0.596);
     font-size: 10vw;
-    font-weight: 300; }
+    font-weight: 300;
+    background: black;
+    background: linear-gradient(65deg, rgba(0, 0, 0, 0.353379) 0%, rgba(177, 172, 172, 0.0116422) 100%); }
   .aboutus__description {
     width: 80%;
     margin: 0 auto;

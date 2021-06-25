@@ -8,6 +8,8 @@
         color: $textColor;
         font-size: 10vw;
         font-weight: 300;
+        background: rgb(0,0,0);
+        background: linear-gradient(65deg, rgba(0,0,0,0.3533788515406162) 0%, rgba(177,172,172,0.011642156862745057) 100%);
     }
 
     &__description{
