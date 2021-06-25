@@ -1,0 +1,27 @@
+.header{
+
+    background-color: red;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    scroll-snap-align: start;
+
+    &__container{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__logo{
+            width: 300px;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 1em;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+.scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; }
+  .scroll section {
+    scroll-snap-align: start; }
+
+.header {
+  background-color: red;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  scroll-snap-align: start; }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header__container__logo {
+      width: 300px; }
+    .header__container__links {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 1em;
+      color: white; }
+
+.main {
+  background-color: blue;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  scroll-snap-align: start; }
+
+.aboutus {
+  background-color: green;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  scroll-snap-align: start; }
+
+.footer {
+  background-color: yellow;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  scroll-snap-align: center; }
