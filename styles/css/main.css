@@ -40,7 +40,7 @@
     text-align: left;
     color: rgba(0, 0, 0, 0.596);
     font-size: 10vw;
-    margin-left: 10px;
+    margin-left: 1px;
     font-weight: 300;
     background: #b1acac;
     background: linear-gradient(65deg, rgba(177, 172, 172, 0.0116422) 0%, rgba(0, 0, 0, 0.353379) 100%); }
@@ -96,7 +96,7 @@
     text-align: right;
     color: rgba(0, 0, 0, 0.596);
     font-size: 10vw;
-    margin-right: 10px;
+    margin-left: 1px;
     font-weight: 300;
     background: black;
     background: linear-gradient(65deg, rgba(0, 0, 0, 0.353379) 0%, rgba(177, 172, 172, 0.0116422) 100%); }
@@ -117,35 +117,35 @@
       font-weight: 700; }
 
 .footer {
-  width: 100vw;
-  padding-bottom: 100px; }
+  width: 100vw; }
   .footer__title {
     text-align: left;
     color: rgba(0, 0, 0, 0.596);
     font-size: 10vw;
     font-weight: 300;
-    margin-left: 10px;
+    margin-left: 1px;
     margin-bottom: 30px;
     background: black;
     background: linear-gradient(65deg, rgba(0, 0, 0, 0.353379) 0%, rgba(177, 172, 172, 0.0116422) 100%); }
   .footer__container__form {
-    width: 90vw;
+    width: 50vw;
     margin: 0 auto;
-    padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid rgba(0, 0, 0, 0.767);
     border-radius: 1em; }
     .footer__container__form__ul__li {
       margin-top: 1em; }
       .footer__container__form__ul__li__label {
         display: inline-block;
         width: 90px;
-        text-align: right; }
+        text-align: right;
+        color: rgba(0, 0, 0, 0.596); }
       .footer__container__form__ul__li__input {
         width: 40vw;
         box-sizing: border-box;
-        border: 1px solid #999; }
+        border: 1px solid #999;
+        color: rgba(0, 0, 0, 0.596); }
         .footer__container__form__ul__li__input:focus {
-          border-color: #000; }
+          border-color: rgba(0, 0, 0, 0.726); }
       .footer__container__form__ul__li__textarea {
         width: 40vw;
         height: 35vh;
@@ -155,5 +155,10 @@
         .footer__container__form__ul__li__textarea:focus {
           border-color: #000; }
     .footer__container__form__button {
-      padding-left: 90px;
-      margin-left: .5em; }
+      margin: 50px 0px 20px 90px;
+      color: rgba(0, 0, 0, 0.596); }
+  .footer__container__contacts {
+    width: 100vw;
+    height: 200px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.596); }
