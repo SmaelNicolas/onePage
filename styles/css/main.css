@@ -125,8 +125,8 @@
     font-weight: 300;
     margin-left: 1px;
     margin-bottom: 30px;
-    background: black;
-    background: linear-gradient(65deg, rgba(0, 0, 0, 0.353379) 0%, rgba(177, 172, 172, 0.0116422) 100%); }
+    background: #b1acac;
+    background: linear-gradient(65deg, rgba(177, 172, 172, 0.0116422) 0%, rgba(0, 0, 0, 0.353379) 100%); }
   .footer__container__form {
     width: 50vw;
     margin: 0 auto;
