@@ -7,7 +7,6 @@
         color: $textColor;
         font-size: 10vw;
         font-weight: 300;
-        margin-left: 1px;
         margin-bottom: 30px;
         background: rgb(177,172,172);
         background: linear-gradient(65deg, rgba(177,172,172,0.011642156862745057) 0%, rgba(0,0,0,0.3533788515406162) 100%);
@@ -15,11 +14,12 @@
 
     &__container{
 
+
         &__form{
-            width: 50vw;
-            margin: 0 auto; 
+            width: 70vw;
             border: 1px solid rgba(0, 0, 0, 0.767);
             border-radius: 1em;
+            margin-left: 20px;
 
             &__ul{
 
@@ -34,7 +34,7 @@
                     }  
                     
                     &__input{
-                        width: 40vw;
+                        width: 20vw;
                         box-sizing: border-box;
                         border: 1px solid #999;
                         color: $textColor;
@@ -46,8 +46,8 @@
 
 
                     &__textarea{
-                            width: 40vw;
-                            height: 35vh;
+                            width: 35vw;
+                            height: 30vh;
                             box-sizing: border-box;
                             border: 1px solid #999;
                             vertical-align: top;
@@ -72,7 +72,6 @@
         &__contacts{
             
             width: 100vw;
-            height: 150px;
             margin-top: 30px;
             background-color: $textColor;
 
@@ -80,16 +79,77 @@
                 
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
                 text-align: center;
-                padding-top: 20px;
 
                 &__icon{
                     color: white;
                     font-size: 8em;
+                    padding-top: 20px;
+                    
                 }
             }
 
         }
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+
+    .footer__container__contacts__socialmedia{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .footer__container__contacts__socialmedia{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .footer{
+
+        &__container{
+
+            &__form{
+                width: 90%;
+
+                &__ul{
+
+                    &__li{
+
+                        &__label{
+                        }  
+                        
+                        &__input{
+                            width: 60%;                            
+                        }
+
+
+                        &__textarea{     
+                            width: 60%;                          
+                            }
+                    }
+                }
+              &__button{          
+                    
+                }
+            }
+        }
+
     }
 }
