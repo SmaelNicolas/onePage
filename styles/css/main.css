@@ -58,7 +58,7 @@
       padding-bottom: 5px;
       width: 90%;
       margin: 0 auto;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.596);
       border-radius: 4%; }
       .main__container__proyect__title {
         text-align: center;
@@ -159,6 +159,15 @@
       color: rgba(0, 0, 0, 0.596); }
   .footer__container__contacts {
     width: 100vw;
-    height: 200px;
+    height: 150px;
     margin-top: 30px;
     background-color: rgba(0, 0, 0, 0.596); }
+    .footer__container__contacts__socialmedia {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      padding-top: 20px; }
+      .footer__container__contacts__socialmedia__icon {
+        color: white;
+        font-size: 8em; }
