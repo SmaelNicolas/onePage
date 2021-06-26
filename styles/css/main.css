@@ -80,7 +80,7 @@
         .main__container__proyect__flex__image {
           width: 210px;
           height: 200px;
-          border-radius: 50%; }
+          border-radius: 20%; }
 
 @media only screen and (max-width: 1000px) {
   .main__container {
