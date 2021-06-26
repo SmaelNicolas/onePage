@@ -1,12 +1,13 @@
 .aboutus{
     
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 60px 0px;
     
 
     &__title{
         text-align: right;
         color: $textColor;
         font-size: 10vw;
+        margin-right: 10px;
         font-weight: 300;
         background: rgb(0,0,0);
         background: linear-gradient(65deg, rgba(0,0,0,0.3533788515406162) 0%, rgba(177,172,172,0.011642156862745057) 100%);
